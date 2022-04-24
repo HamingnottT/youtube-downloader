@@ -10,8 +10,8 @@ class MainMenu:
         def main_options():
             print("What information are you looking for today?\n\n"
             "1 = Get Video Info \n"
-            "2 = Download Dash Stream (highest quality) \n"
-            "3 = Download Progressive \n"
+            "2 = Download Progressive \n"
+            # "3 = Download Dash Stream (highest quality) \n"
             "0 = Cancel & Exit \n")
         
         main_options()
@@ -21,9 +21,9 @@ class MainMenu:
             if option == 1:
                 yt_extractor.get_vid_info()
             elif option == 2:
-                yt_extractor.download_dash()
-            elif option == 3:
-                yt_extractor.download_progressive() 
+                yt_extractor.download_progressive()
+            # elif option == 3:
+            #     yt_extractor.download_dash() 
             else:
                 print("\nInvalid response, please try again.\n")
 

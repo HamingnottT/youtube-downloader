@@ -11,7 +11,7 @@ class VideoExtractor:
 
     # Dash Stream - downloads the highest quality video and audio
     def download_dash():
-        # print(yt.streams)
+        print(yt.streams)
         # print("-"*48)
         # print("audio only: ")
         # print(yt.streams.filter(only_audio=True))
@@ -19,11 +19,12 @@ class VideoExtractor:
         print("video only: ")
         print(yt.streams.filter(resolution="1080p"))
         yd = yt.streams.get_by_itag(itag="137")
+        yr = yt.streams.get_by_resolution(resolution="1080p")
         ya = yt.streams.get_audio_only()
 
         print("\nDownloading video. . .\n")
         
-        yd.download(output_path=f"{default_path}", filename=f"~video-only-{yt.title}.mp4")
+        yr.download(output_path=f"{default_path}", filename=f"~video-only-{yt.title}.mp4")
         ya.download(output_path=f"{default_path}",filename=f"~audio-only-{yt.title}.m4a")
 
         print(f"Downloaded video to {default_path}\n")
