@@ -1,2 +1,8 @@
-pytube==12.0.0
+"""
+pytube main has to be installed last. There is a regex issue in cipher.py
+replace in function_patterns at line 264
+r'\([a-z]\s*=\s*([a-zA-Z0-9$]{2})(\[\d+\])?\([a-z]\)',
+"""
+
 pytube3==9.6.4
+pytube==12.0.0

@@ -1,4 +1,4 @@
-import yt_downloader
+import src.yt_downloader
 
 print("="*48)
 print("main.py")
@@ -33,6 +33,7 @@ class MainMenu:
 
     
     def main():
+        yt_downloader = src.yt_downloader
         global yt_extractor
         yt_extractor = yt_downloader.VideoExtractor
         print("\nThis is a simple program that will download YouTube videos for watching at any time.")
@@ -43,5 +44,5 @@ if __name__ == '__main__':
     MainMenu.main()
 
 print("="*48)
-print("\nEnding Program. . .\n")
+print("Ending Program. . .")
 print("="*48)
