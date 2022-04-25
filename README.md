@@ -23,9 +23,17 @@ Repo can be cloned easily using the Github CLI, Desktop app, or by using VS Code
 This application should not need anything outside of Python and a package manager such as Pip or Conda. The PyTube library must be installed for this application to work as intended.
 
 A batch file is provided to install PyTube the quick way on windows.
+Manually, install PyTube and Pytube3 in this order:
+1. PyTube3
+2. PyTube
+
+Now with a batch file to make program execution automated.
 
 # Usage
 This project should be ready to plug and play. There are a few known bugs, such as in option 2 in the main menu. More features will be added for better performance.
+
+Start yt.bat, by either clicking on the file or by typing "yt" in the command prompt
+	- Execution in command prompt can be made even easier by adding the directory to path.
 
 Please use this program responsibly. 
 
