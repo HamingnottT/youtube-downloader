@@ -2,11 +2,14 @@
 
 @echo off
 
-%~d0			::calls the currect drive letter
+::calls the currect drive letter
+%~d0			
 
-cd "%~dp0"		::searches for path of batch file
+::searches for path of batch file
+cd "%~dp0"		
 
-python -m src.main	::calls main.py from src
+::calls main.py from src
+python -m src.main	
 
 timeout.exe 1
 
